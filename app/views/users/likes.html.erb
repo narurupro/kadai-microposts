@@ -27,11 +27,11 @@ Microposts <span class="badge">
 </span>
 <% end %>
 </li>
- <li class="
+<li class="
 <%= 'active' if current_page?(likes_user_path(@user)) %>
 ">
 <%= link_to likes_user_path(@user) do %>
-Favorite Microposts <span class="badge">
+Favorite microposts <span class="badge">
 <%= @count_favorites %>
 </span>
 <% end %>
@@ -56,7 +56,7 @@ Followers <span class="badge">
 </li>
     </ul>
     
-<%= render 'users', users: @followers %>
+<%= render 'microposts/microposts', microposts: @microposts %>
 
   </div>
 </div>
